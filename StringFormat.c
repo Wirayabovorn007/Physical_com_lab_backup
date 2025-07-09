@@ -2,7 +2,7 @@
 
 int main(){
     char text[13] = "Hello, world";
-    printf("12345678901234567890123456789\n");
+    printf("123456789012345678901234567890\n");
     printf("%s*\n", text);
     printf("%20s*\n", text);
     printf("%.20s*\n", text);
