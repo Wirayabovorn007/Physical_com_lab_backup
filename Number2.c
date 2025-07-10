@@ -1,27 +1,26 @@
 #include <stdio.h>
 
 int main(){
-    char num[6];
-    
-    scanf("%s", num);
-    
-    int l = 0;
-    while (l < 5)
+
+    char digit[6];
+    scanf("%s", digit);    
+
+    int i = 0;  
+    while (i < 5)
     {
         //space
-        int sp = 0;
-        while (sp < l){
-            putchar(32);
-            sp++;
+        int s = 0;
+        while (s<i){
+            printf("%c", 32); //ASCII 32  = SP
+            s++;
         }
-        //number
-        int n = 0;
-        while (n <= l)
-        {
-            printf("%c", num[n]);
-            n++;
+        int j = 0;
+        while (j<=i){
+            printf("%c", digit[j]);
+            j++;
         }
-        l++;
-        if (l < 5) putchar(10); //new line
+        i++;
+        if (i<5) printf("%c", 10);
     }
+    
 }
