@@ -9,7 +9,7 @@ int main() {
     //After
 
     //Expression here
-    -++a;
+    a += ++a;
 
     printf("After: a = %d, b = %d, c = %d, d = %d", a,b,c,d);
     return 0;
