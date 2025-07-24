@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    float n;
-    scanf("%f", &n);
+    double n;
+    scanf("%lf", &n);
 
     if (n < 0 || n > 58.855)
         printf("InValid");
