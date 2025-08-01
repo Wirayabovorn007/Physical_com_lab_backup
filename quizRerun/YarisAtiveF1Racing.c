@@ -8,7 +8,8 @@ int main(){
     scanf("%d%f%d%d", &isSafe, &distance, &raceRound, &safetyCarRound);
 
     if (isSafe != 1) countErr+=1;
-    if (!(raceRound > safetyCarRound + 2)) countErr+=2;
+    if (!(raceRound > 2)) countErr+=1;
+    if (!(raceRound > safetyCarRound + 1)) countErr+=1;
     if (!(distance < 1.000)) countErr+=1;
 
     if (countErr == 0) printf("DRS allowed");
