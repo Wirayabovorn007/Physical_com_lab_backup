@@ -25,4 +25,8 @@ int main(){
              ans[i][j] = val;
         }
     }
+
+    for (int i=0; i< 9; i++){
+        
+    }
 }
