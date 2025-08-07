@@ -22,7 +22,7 @@ int main(){
 	{
 		ind = getIndexIfCharInStr(text, txt[i]);
 		if (ind >=0 && isalpha(txt[i])){
-			ind = (ind - 5 + 26) % 26;
+			ind = (ind + 5 + 26) % 26;
 			ans[i] = text[ind];
 			if (islower(txt[i])) ans[i] += 32;
 		}else{
