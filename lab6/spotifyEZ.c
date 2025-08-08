@@ -13,20 +13,20 @@ int main(){
 
     long totalTime = minute_have * 60 + second_have;
     char songName[n][51];
-    int songDutation[n];
+    int songDur[n];
 
     for (int i=0; i<n; i++){
         scanf(" Queue#%*d <|> %[^<] <|> %d.%d", songName[i], &inputM, &inputS);
-        songDutation[i]= inputM * 60 + inputS;
+        songDur[i]= inputM * 60 + inputS;
     } 
     int ind=0;
 
     while (1){
-        int dur = songDutation[ind];
+        int dur = songDur[ind];
         if (totalTime < dur){
             printf("Song Order: %d\n", ind+1);
             printf("Sonf Name: %s\n", songName[ind]);
-            int percent = (100*totalTime) / dur;
+            int percent = (totalTime * 100) / dur;
             if (percent == 0 && totalTime > 0) percent = 1;
             printf("Song Process: %d%%", percent);
             break;
