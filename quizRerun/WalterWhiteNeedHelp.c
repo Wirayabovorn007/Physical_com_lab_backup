@@ -8,12 +8,20 @@ int main(){
     scanf("%d", &stop);
 
     printf("pass : ");
-    for (int i=start; i <= stop; i++){
-        if (i % 2 == 0){
-            printf("%d", i);
-            if (i < stop) printf(" ");
+    if (start < stop){
+        for (int i=start; i <= stop; i++){
+        if ((i % 2 == 0 )){
+            printf("%d ", i);
             count+=i;
         }
+    }
+    }else{ 
+        for (int i=start; i >= stop; i--){
+        if ((i % 2 == 0 )){
+            printf("%d ", i);
+            count+=i;
+        }
+    }
     }
     printf("\nSum : %d", count);
     
