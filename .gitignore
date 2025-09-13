@@ -2,3 +2,4 @@
 *.out
 .vscode
 temp.c
+.ini

@@ -2,7 +2,7 @@ struct Book {
     char id[10];
     char name[100];
     char author[100];
-}
+};
 
 
 
